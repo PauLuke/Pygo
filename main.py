@@ -60,7 +60,7 @@ def drawBoard(window):
         # Desenhar linhas verticais
         pygame.draw.line(window, lineColor, (30 + i * (HEIGHT - 60) // (boardSize - 1), 30), (30 + i * (HEIGHT - 60) // (boardSize - 1), HEIGHT - 30), lineWidth)
 
-    # Desenhar os pontos "hoshi"
+    # Desenhar os pontos "hoshi" para os diferentes tamanhos de tabuleiros
     if (boardSize == 9):
         hoshi_points = [(2, 2), (6, 2), (2, 6), (6, 6), (4, 4)]
     if (boardSize == 13):
